@@ -3,18 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TerraPredict</title>
+    <title>TerraPredict - Demo</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        .announcement {
+            background-color: #f0f8ff;
+            border: 1px solid #4682b4;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenido a TerraPredict</h1>
+        <h1>Bienvenido a TerraPredict - Versión Demo</h1>
         <nav>
             <a href="/dashboard" id="dashboardBtn">Dashboard</a>
         </nav>
     </header>
     <main>
-        <p id="welcomeMessage">Bienvenido a TerraPredict. Accede al dashboard para ver tus datos.</p>
+        <div class="announcement">
+            <p><strong>Anuncio importante:</strong> Esta es una versión de demostración de TerraPredict. En el entregable 2 de la competencia CopernicusLAC, esta funcionalidad será integrada directamente en la página principal de TerraPredict, ofreciendo una experiencia más completa y avanzada.</p>
+        </div>
+        <p id="welcomeMessage">Bienvenido a la demo de TerraPredict. Accede al dashboard para explorar las funcionalidades disponibles en esta versión.</p>
     </main>
     <script>
         fetch('/api/auth/status')
@@ -24,10 +36,11 @@
                 const welcomeMessage = document.getElementById('welcomeMessage');
                 
                 if (data.isAuthenticated) {
-                    welcomeMessage.textContent = `Bienvenido, ${data.user.name}! Accede a tu dashboard para ver tus datos.`;
+                    welcomeMessage.textContent = `Bienvenido, ${data.user.name}! Accede a tu dashboard para explorar la demo de TerraPredict.`;
                 } else {
                     dashboardBtn.textContent = 'Iniciar sesión';
                     dashboardBtn.href = '/login';
+                    welcomeMessage.textContent = 'Inicia sesión para acceder a la demo de TerraPredict y explorar sus funcionalidades.';
                 }
             });
     </script>

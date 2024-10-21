@@ -144,25 +144,37 @@
                 <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300 col-span-2">
                     <h2 class="text-xl font-semibold text-gray-700 mb-4">Mapa de Microclimas</h2>
                     <div class="aspect-w-16 aspect-h-9">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/placeholder-4Hnx0fxkDQXOGQZXXGXXXXXXXXXX.svg" alt="Mapa de Microclimas" class="rounded-lg object-cover w-full h-full">
+                        <img src="/img/microclimas.png" alt="Mapa de Microclimas" class="rounded-lg object-cover w-full h-full">
                     </div>
                 </div>
                 <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
                     <h2 class="text-xl font-semibold text-gray-700 mb-4">Alertas Recientes</h2>
-                    <ul class="space-y-2">
-                        <li class="flex items-center space-x-2 text-sm">
-                            <span class="w-2 h-2 bg-red-500 rounded-full"></span>
-                            <span>Alerta de sequía en Sector A</span>
-                        </li>
-                        <li class="flex items-center space-x-2 text-sm">
-                            <span class="w-2 h-2 bg-yellow-500 rounded-full"></span>
-                            <span>Posible helada en Sector B</span>
-                        </li>
-                        <li class="flex items-center space-x-2 text-sm">
-                            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-                            <span>Condiciones óptimas en Sector C</span>
-                        </li>
-                    </ul>
+                    <div class="space-y-4">
+                        <div class="bg-red-100 border border-red-200 rounded-lg p-4 shadow-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-exclamation-triangle text-red-500 mr-2"></i>
+                                <span class="font-semibold text-red-700">Alerta de sequía</span>
+                            </div>
+                            <p class="text-sm text-red-600 mt-1">Sector A - Riesgo alto</p>
+                            <p class="text-xs text-gray-600 mt-1">Última actualización: Hace 2 horas</p>
+                        </div>
+                        <div class="bg-yellow-100 border border-yellow-200 rounded-lg p-4 shadow-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-snowflake text-yellow-500 mr-2"></i>
+                                <span class="font-semibold text-yellow-700">Posible helada</span>
+                            </div>
+                            <p class="text-sm text-yellow-600 mt-1">Sector B - Riesgo moderado</p>
+                            <p class="text-xs text-gray-600 mt-1">Última actualización: Hace 4 horas</p>
+                        </div>
+                        <div class="bg-green-100 border border-green-200 rounded-lg p-4 shadow-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                <span class="font-semibold text-green-700">Condiciones óptimas</span>
+                            </div>
+                            <p class="text-sm text-green-600 mt-1">Sector C - Sin riesgos</p>
+                            <p class="text-xs text-gray-600 mt-1">Última actualización: Hace 1 hora</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -389,7 +401,7 @@
                 "Imágenes Satelitales": `
                     <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
                         <h2 class="text-xl font-semibold text-gray-700 mb-4">Imágenes Satelitales</h2>
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/placeholder-4Hnx0fxkDQXOGQZXXGXXXXXXXXXX.svg" alt="Imagen Satelital" class="w-full h-48 object-cover rounded-lg">
+                        <img src="/img/sattelite.png" alt="Imagen Satelital" class="w-full h-48 object-cover rounded-lg">
                         <p class="mt-2 text-sm text-gray-600">Última actualización: Hace 2 días</p>
                     </div>
                 `,
@@ -423,7 +435,7 @@
                     <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
                         <h2 class="text-xl font-semibold text-gray-700 mb-4">Cartografía de Riesgos de Infraestructuras</h2>
                         <div class="aspect-w-16 aspect-h-9 mb-4">
-                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/placeholder-4Hnx0fxkDQXOGQZXXGXXXXXXXXXX.svg" alt="Mapa de Riesgos" class="rounded-lg object-cover w-full h-full">
+                            <img src="/img/cartografia-de-riesgos-de-infraestructuras.png" alt="Mapa de Riesgos" class="rounded-lg object-cover w-full h-full">
                         </div>
                         <p class="text-sm text-gray-600">Áreas de alto riesgo identificadas: 3</p>
                     </div>

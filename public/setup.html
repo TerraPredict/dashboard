@@ -100,8 +100,8 @@
                     <div class="relative flex items-center">
                         <i class="fas fa-phone absolute left-3 text-gray-400"></i>
                         <select id="country-code" class="pl-10 pr-4 py-2 border border-gray-300 rounded-l-lg focus:ring-2 focus:ring-green-500 focus:border-transparent">
-                            <option value="+507">🇵🇦 +507</option>
                             <option value="+54">🇦🇷 +54</option>
+                            <option value="+507">🇵🇦 +507</option>
                             <option value="+591">🇧🇴 +591</option>
                             <option value="+55">🇧🇷 +55</option>
                             <option value="+56">🇨🇱 +56</option>
@@ -237,7 +237,8 @@
                 const response = await fetch('https://ipapi.co/json/');
                 const data = await response.json();
                 document.getElementById('pais').value = data.country_name;
-                document.getElementById('country-code').value = '+' + data.country_calling_code.replace('+', '');
+                document.getElementById('country-code').value = data.country_calling_code
+                formData.countryCode = data.country_calling_code;
             } catch (error) {
                 console.error('Error al obtener la ubicación:', error);
             }
@@ -250,8 +251,8 @@
         const countrySelect = document.getElementById('pais');
         const countries = [
             "Argentina", "Bolivia", "Brasil", "Chile", "Colombia", "Costa Rica", "Cuba", "Ecuador", "El Salvador",
-            "Guatemala", "Honduras", "México", "Nicaragua", "Panamá", "Paraguay", "Perú", "Puerto Rico",
-            "República Dominicana", "Uruguay", "Venezuela"
+            "Guatemala", "Honduras", "Mexico", "Nicaragua", "Panama", "Paraguay", "Perú", "Puerto Rico",
+            "Republica Dominicana", "Uruguay", "Venezuela"
         ];
         countries.forEach(country => {
             const option = document.createElement('option');
@@ -451,10 +452,10 @@
                                 </div>
                             `;
     
-                            // Redirigir al dashboard después de 5 segundos
+                            // Redirigir al dashboard después de 4 segundos
                             setTimeout(() => {
                                 window.location.href = '/dashboard';
-                            }, 5000);
+                            }, 4000);
                         } else {
                             alert('Hubo un error al guardar tus datos. Por favor, intenta de nuevo.');
                             setTimeout(() => {
