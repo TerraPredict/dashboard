@@ -2,19 +2,19 @@
 
 ## 📊 Índice
 
-1. [Introducción](#introducción)
-2. [Características](#características)
-3. [Tecnologías Utilizadas](#tecnologías-utilizadas)
-4. [Estructura del Proyecto](#estructura-del-proyecto)
-5. [Instalación y Configuración](#instalación-y-configuración)
-6. [Uso](#uso)
-7. [Componentes del Sistema](#componentes-del-sistema)
-8. [Flujo de Trabajo](#flujo-de-trabajo)
-9. [Seguridad](#seguridad)
-10. [Escalabilidad y Rendimiento](#escalabilidad-y-rendimiento)
-11. [Contribución](#contribución)
-12. [Licencia](#licencia)
-13. [Contacto](#contacto)
+1. [Introducción](#-introducción)
+2. [Características](#-características)
+3. [Tecnologías Utilizadas](#-tecnologías-utilizadas)
+4. [Estructura del Proyecto](#-estructura-del-proyecto)
+5. [Instalación y Configuración](#️-instalación-y-configuración)
+6. [Uso](#️-uso)
+7. [Componentes del Sistema](#-componentes-del-sistema)
+8. [Flujo de Trabajo](#-flujo-de-trabajo)
+9. [Seguridad](#-seguridad)
+10. [Escalabilidad y Rendimiento](#-escalabilidad-y-rendimiento)
+11. [Contribución](#-contribución)
+12. [Licencia](#-licencia)
+13. [Contacto](#-contacto)
 
 
 ## 🌟 Introducción
