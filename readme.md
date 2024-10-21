@@ -99,18 +99,20 @@ terrapredict-dashboard/
 └── README.md
 ```
 
+Aquí tienes una versión mejorada de la sección de Instalación y Configuración:
+
 ## 🛠️ Instalación y Configuración
 
-### Prerrequisitos
+### Prerrequisitos 📋
 
-- Node.js (v14.0.0 o superior)
-- npm (v6.0.0 o superior)
-- Cuenta en Auth0
+- Node.js (v14.0.0 o superior) 🟢
+- npm (v6.0.0 o superior) 📦
+- Cuenta en Auth0 🔐
 
 
-### Pasos de Instalación
+### Pasos de Instalación 🚀
 
-1. **Clonar el repositorio**
+1. **Clonar el repositorio** 📥
 
 ```shellscript
 git clone https://github.com/tu-usuario/terrapredict-dashboard.git
@@ -118,62 +120,19 @@ cd terrapredict-dashboard
 ```
 
 
-2. **Instalar dependencias**
+2. **Instalar dependencias** 📚
 
 ```shellscript
 npm install
 ```
 
 
-3. **Configurar variables de entorno**
+3. **Configurar variables de entorno** ⚙️
 
-Crea un archivo `.env` en la raíz del proyecto y añade las siguientes variables:
-
-```plaintext
-PORT=3000
-SESSION_SECRET=''
-AUTH0_CALLBACK_URL='http://localhost:3001/callback'
-AUTH0_CLIENT_ID=''
-AUTH0_CLIENT_SECRET=''
-AUTH0_DOMAIN=''
-```
-
-**Configurar Auth0**
-
-- Crea una cuenta en [Auth0](https://auth0.com/) si aún no tienes una
-- Inicia sesión en tu cuenta de Auth0
-- Crea una nueva aplicación:
-
-1. Ve al dashboard de Auth0
-2. Haz clic en "Applications" en el menú lateral
-3. Haz clic en "Create Application"
-4. Dale un nombre a tu aplicación (por ejemplo, "TerraPredict")
-5. Selecciona "Regular Web Applications" como tipo de aplicación
-6. Haz clic en "Create"
-
-
-
-- Configura las URLs de la aplicación:
-
-1. En la pestaña "Settings" de tu aplicación en Auth0
-2. En "Allowed Callback URLs", añade: `http://localhost:3001/callback`
-3. En "Allowed Logout URLs", añade: `http://localhost:3001`
-4. Guarda los cambios
-
-
-
-- Copia la siguiente información de la pestaña "Settings" a tu archivo `.env`:
-
- - Domain
- - Client ID
- - Client Secret
-
-
-
-6. Tu archivo `.env` debería verse así (con tus valores específicos):
+Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido:
 
 ```plaintext
-PORT=3000
+PORT=3001
 SESSION_SECRET=tu_secreto_de_sesion
 AUTH0_CALLBACK_URL='http://localhost:3001/callback'
 AUTH0_CLIENT_ID=tu_client_id_de_auth0
@@ -181,22 +140,76 @@ AUTH0_CLIENT_SECRET=tu_client_secret_de_auth0
 AUTH0_DOMAIN=tu_dominio_de_auth0
 ```
 
-- Asegúrate de reemplazar `tu_secreto_de_sesion`, `tu_client_id_de_auth0`, `tu_client_secret_de_auth0`, y `tu_dominio_de_auth0` con los valores reales de tu aplicación Auth0.
 
-5. **Inicializar la base de datos**
+4. **Configurar Auth0** 🔒
+
+a. Crear una cuenta y aplicación:
+
+1. Regístrate en [Auth0](https://auth0.com/) si aún no tienes cuenta
+2. En el dashboard, ve a "Applications" → "Create Application"
+3. Nombre: "TerraPredict" (o el que prefieras)
+4. Tipo: "Regular Web Applications"
+5. Haz clic en "Create"
+
+
+b. Configurar URLs:
+
+1. En "Settings" de tu aplicación Auth0:
+
+1. Allowed Callback URLs: `http://localhost:3001/callback`
+2. Allowed Logout URLs: `http://localhost:3001`
+
+
+
+2. Guarda los cambios
+
+
+c. Obtener credenciales:
+
+1. Copia de "Settings":
+
+1. Domain
+2. Client ID
+3. Client Secret
+
+
+
+2. Pega estos valores en tu archivo `.env`
+
+
+
+5. **Inicializar la base de datos** 💾
 
 La base de datos SQLite se inicializará automáticamente al ejecutar la aplicación por primera vez.
 
 
-6. **Ejecutar la aplicación**
+6. **Ejecutar la aplicación** 🚀
 
 ```shellscript
 npm start
 ```
 
-La aplicación estará disponible en `http://localhost:3001`
+La aplicación estará disponible en `http://localhost:3001` 🌐
 
 
+
+
+### Verificación Final ✅
+
+Asegúrate de que tu archivo `.env` se vea así (con tus valores específicos):
+
+```plaintext
+PORT=3001
+SESSION_SECRET=tu_secreto_de_sesion
+AUTH0_CALLBACK_URL='http://localhost:3001/callback'
+AUTH0_CLIENT_ID=tu_client_id_de_auth0
+AUTH0_CLIENT_SECRET=tu_client_secret_de_auth0
+AUTH0_DOMAIN=tu_dominio_de_auth0
+```
+
+> Asegúrate de reemplazar `tu_secreto_de_sesion`, `tu_client_id_de_auth0`, `tu_client_secret_de_auth0`, y `tu_dominio_de_auth0` con los valores reales de tu aplicación Auth0.
+
+¡Listo! Tu aplicación TerraPredict debería estar configurada y lista para funcionar. 🎉
 
 
 ## 🖥️ Uso
