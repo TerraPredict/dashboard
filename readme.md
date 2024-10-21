@@ -12,9 +12,8 @@
 8. [Flujo de Trabajo](#-flujo-de-trabajo)
 9. [Seguridad](#-seguridad)
 10. [Escalabilidad y Rendimiento](#-escalabilidad-y-rendimiento)
-11. [Contribución](#-contribución)
-12. [Licencia](#-licencia)
-13. [Contacto](#-contacto)
+11. [Licencia](#-licencia)
+12. [Contacto](#-contacto)
 
 
 ## 🌟 Introducción
