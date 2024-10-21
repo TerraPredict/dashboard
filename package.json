@@ -7,7 +7,7 @@
     "dev": "nodemon src/app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "TerraPredict",
   "license": "ISC",
   "description": "",
   "dependencies": {

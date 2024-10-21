@@ -128,7 +128,6 @@ app.get('/api/user', requiresAuth(), (req, res) => {
     if (!row) {
       return res.status(404).json({ error: 'User not found' });
     }
-    // Parse JSON strings back to objects
     if (row.sector) row.sector = JSON.parse(row.sector);
     if (row.services) row.services = JSON.parse(row.services);
     res.json(row);

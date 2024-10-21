@@ -226,6 +226,6 @@ Este proyecto está licenciado bajo la Licencia MIT. Ver el archivo `LICENSE` pa
 
 ## 📞 Contacto
 
-TerraPredict - [@terrapredict](https://twitter.com/terrapredict) - [info@terrapredict.com](mailto:info@terrapredict.com)
+TerraPredict - [info@terrapredict.com](mailto:info@terrapredict.com)
 
 Link del Proyecto: [https://github.com/tu-usuario/terrapredict-dashboard](https://github.com/tu-usuario/terrapredict-dashboard)
