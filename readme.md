@@ -47,8 +47,6 @@ Este proyecto es una demostración (demo) que ilustra las capacidades de TerraPr
 - **Mapas**: (Pendiente de implementación) Mapbox o Google Maps API
 - **Control de Versiones**: Git
 
-Entendido. Voy a crear una sección que destaque las características dinámicas del dashboard y la futura capacidad de configuración de servicios. Esta sección se colocará justo después de la sección de características en el README.
-
 ## 🔧 Dashboard Dinámico y Personalización
 
 TerraPredict ofrece una experiencia de usuario única y adaptable a través de su innovador sistema de dashboard dinámico. Esta característica avanzada permite que la interfaz se ajuste automáticamente a las necesidades específicas de cada agricultor, optimizando así la relevancia y utilidad de la información presentada.
