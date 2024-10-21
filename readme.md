@@ -47,8 +47,34 @@ Este proyecto es una demostración (demo) que ilustra las capacidades de TerraPr
 - **Animaciones**: Animate.css, Hover.css
 - **Mapas**: (Pendiente de implementación) Mapbox o Google Maps API
 - **Control de Versiones**: Git
-- **Despliegue**: (Ejemplo) Vercel, Heroku
 
+Entendido. Voy a crear una sección que destaque las características dinámicas del dashboard y la futura capacidad de configuración de servicios. Esta sección se colocará justo después de la sección de características en el README.
+
+## 🔧 Dashboard Dinámico y Personalización
+
+TerraPredict ofrece una experiencia de usuario única y adaptable a través de su innovador sistema de dashboard dinámico. Esta característica avanzada permite que la interfaz se ajuste automáticamente a las necesidades específicas de cada agricultor, optimizando así la relevancia y utilidad de la información presentada.
+
+### 🧩 Widgets Dinámicos
+
+- **Adaptabilidad Automática**: El dashboard genera y muestra widgets de forma dinámica basándose en los servicios seleccionados por el usuario. Esto asegura que cada agricultor vea solo la información pertinente a sus operaciones.
+- **Personalización Inteligente**: A medida que el usuario interactúa con la plataforma y utiliza diferentes servicios, el dashboard evoluciona, reflejando las áreas de mayor interés y uso.
+- **Eficiencia en la Visualización**: Al mostrar solo los widgets relevantes, se optimiza el espacio en pantalla y se mejora la experiencia del usuario, permitiendo un acceso rápido y eficiente a la información crítica.
+
+
+### 🔄 Configuración Flexible de Servicios
+
+En futuras actualizaciones, TerraPredict introducirá capacidades avanzadas de configuración, permitiendo a los usuarios una mayor personalización de su experiencia:
+
+- **Edición de Servicios**: Los usuarios podrán añadir, eliminar o modificar los servicios que utilizan directamente desde la interfaz de configuración.
+- **Priorización de Información**: Se implementará la capacidad de reorganizar y priorizar los widgets en el dashboard según las preferencias individuales.
+- **Ajustes Personalizados**: Cada widget podrá ser configurado individualmente, permitiendo a los usuarios definir parámetros específicos, como frecuencia de actualización de datos o umbrales de alerta.
+
+
+### 🎨 Interfaz Adaptativa
+
+- **Diseño Responsivo**: El dashboard se adapta perfectamente a diferentes dispositivos y tamaños de pantalla, desde computadoras de escritorio hasta tablets y smartphones.
+- **Temas Personalizables**: En el futuro, los usuarios podrán elegir entre varios temas visuales o incluso crear los suyos propios, adaptando la apariencia del dashboard a sus preferencias.
+- **Accesibilidad**: La interfaz está diseñada teniendo en cuenta las mejores prácticas de accesibilidad, asegurando que sea utilizable por agricultores con diversas necesidades.
 
 ## 📁 Estructura del Proyecto
 
