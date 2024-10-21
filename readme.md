@@ -140,6 +140,7 @@ AUTH0_CLIENT_SECRET=tu_client_secret_de_auth0
 AUTH0_DOMAIN=tu_dominio_de_auth0
 ```
 
+> Nota: Para el SESSION_SECRET, debes usar un valor aleatorio y único. Puede ser cualquier cadena de texto larga y compleja. Lo importante es que sea difícil de adivinar y que se mantenga en secreto, es un valor utilizado para cifrar las cookies de sesión. No está relacionado con Auth0 y debe mantenerse en secreto. Asegúrate de que sea único para tu aplicación y no lo compartas públicamente.
 
 4. **Configurar Auth0** 🔒
 
