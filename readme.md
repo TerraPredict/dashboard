@@ -271,7 +271,7 @@ AUTH0_DOMAIN=tu_dominio_de_auth0
 
 ## 📄 Licencia
 
-Este proyecto está licenciado bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
+Este proyecto está licenciado bajo la Licencia Apache License. Ver el archivo `LICENSE` para más detalles.
 
 ## 📞 Contacto
 
