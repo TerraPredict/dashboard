@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TerraPredict</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a TerraPredict</h1>
+        <nav>
+            <a href="/dashboard" id="dashboardBtn">Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <p id="welcomeMessage">Bienvenido a TerraPredict. Accede al dashboard para ver tus datos.</p>
+    </main>
+    <script>
+        fetch('/api/auth/status')
+            .then(response => response.json())
+            .then(data => {
+                const dashboardBtn = document.getElementById('dashboardBtn');
+                const welcomeMessage = document.getElementById('welcomeMessage');
+                
+                if (data.isAuthenticated) {
+                    welcomeMessage.textContent = `Bienvenido, ${data.user.name}! Accede a tu dashboard para ver tus datos.`;
+                } else {
+                    dashboardBtn.textContent = 'Iniciar sesión';
+                    dashboardBtn.href = '/login';
+                }
+            });
+    </script>
+</body>
+</html>
