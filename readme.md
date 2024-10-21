@@ -131,6 +131,49 @@ Crea un archivo `.env` en la raíz del proyecto y añade las siguientes variable
 
 ```plaintext
 PORT=3000
+SESSION_SECRET=''
+AUTH0_CALLBACK_URL='http://localhost:3001/callback'
+AUTH0_CLIENT_ID=''
+AUTH0_CLIENT_SECRET=''
+AUTH0_DOMAIN=''
+```
+
+**Configurar Auth0**
+
+- Crea una cuenta en [Auth0](https://auth0.com/) si aún no tienes una
+- Inicia sesión en tu cuenta de Auth0
+- Crea una nueva aplicación:
+
+1. Ve al dashboard de Auth0
+2. Haz clic en "Applications" en el menú lateral
+3. Haz clic en "Create Application"
+4. Dale un nombre a tu aplicación (por ejemplo, "TerraPredict")
+5. Selecciona "Regular Web Applications" como tipo de aplicación
+6. Haz clic en "Create"
+
+
+
+- Configura las URLs de la aplicación:
+
+1. En la pestaña "Settings" de tu aplicación en Auth0
+2. En "Allowed Callback URLs", añade: `http://localhost:3001/callback`
+3. En "Allowed Logout URLs", añade: `http://localhost:3001`
+4. Guarda los cambios
+
+
+
+- Copia la siguiente información de la pestaña "Settings" a tu archivo `.env`:
+
+ - Domain
+ - Client ID
+ - Client Secret
+
+
+
+6. Tu archivo `.env` debería verse así (con tus valores específicos):
+
+```plaintext
+PORT=3000
 SESSION_SECRET=tu_secreto_de_sesion
 AUTH0_CALLBACK_URL='http://localhost:3001/callback'
 AUTH0_CLIENT_ID=tu_client_id_de_auth0
@@ -138,14 +181,7 @@ AUTH0_CLIENT_SECRET=tu_client_secret_de_auth0
 AUTH0_DOMAIN=tu_dominio_de_auth0
 ```
 
-
-4. **Configurar Auth0**
-
-1. Crea una cuenta en [Auth0](https://auth0.com/)
-2. Crea una nueva aplicación y configura las URLs de callback
-3. Copia el Client ID, Client Secret y Domain a tu archivo `.env`
-
-
+- Asegúrate de reemplazar `tu_secreto_de_sesion`, `tu_client_id_de_auth0`, `tu_client_secret_de_auth0`, y `tu_dominio_de_auth0` con los valores reales de tu aplicación Auth0.
 
 5. **Inicializar la base de datos**
 
@@ -158,7 +194,7 @@ La base de datos SQLite se inicializará automáticamente al ejecutar la aplicac
 npm start
 ```
 
-La aplicación estará disponible en `http://localhost:3000`
+La aplicación estará disponible en `http://localhost:3001`
 
 
 
