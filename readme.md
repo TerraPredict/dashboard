@@ -132,7 +132,7 @@ Crea un archivo `.env` en la raíz del proyecto y añade las siguientes variable
 ```plaintext
 PORT=3000
 SESSION_SECRET=tu_secreto_de_sesion
-AUTH0_CALLBACK_URL='http://localhost:3001/callback' read
+AUTH0_CALLBACK_URL='http://localhost:3001/callback'
 AUTH0_CLIENT_ID=tu_client_id_de_auth0
 AUTH0_CLIENT_SECRET=tu_client_secret_de_auth0
 AUTH0_DOMAIN=tu_dominio_de_auth0
